@@ -1,4 +1,3 @@
-/* broad override — everything comic sans */
 :root,
 body,
 * {
@@ -9,11 +8,11 @@ body,
   --ds-font-family: "Comic Sans MS", "Comic Sans", cursive !important;
 }
 
-/* but keep code monospace */
 code,
 pre,
 kbd,
 samp,
+.md-code-block,
 .ds-markdown code,
 .ds-markdown pre {
   font-family: ui-monospace, "SF Mono", "Cascadia Code", "JetBrains Mono",
