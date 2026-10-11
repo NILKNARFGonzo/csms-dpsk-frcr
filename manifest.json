@@ -1,8 +1,16 @@
 {
   "manifest_version": 3,
-  "name": "Comic Sans Override for DeepSeek",
+  "name": "Comic Sans Override",
   "version": "1.0",
-  "description": "Forces Comic Sans on DeepSeek. Why? ...Well.. Why not?",
+  "description": "Forces Comic Sans on sites that use Inter / quote-cjk-patch.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "comic-sans-override@nilknarfgonzo.bsky.social",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
   "content_scripts": [
     {
       "matches": ["https://chat.deepseek.com/*"],
