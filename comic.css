@@ -8,13 +8,16 @@ body,
   --ds-font-family: "Comic Sans MS", "Comic Sans", cursive !important;
 }
 
-code,
-pre,
-kbd,
-samp,
-.md-code-block,
-.ds-markdown code,
-.ds-markdown pre {
+/* Use a universal selector with !important to beat inline styles */
+html body code,
+html body code *,
+html body pre,
+html body pre *,
+html body .md-code-block,
+html body .md-code-block *,
+html body .ds-markdown code,
+html body .ds-markdown pre,
+html body .ds-markdown pre * {
   font-family: ui-monospace, "SF Mono", "Cascadia Code", "JetBrains Mono",
     Consolas, "Liberation Mono", Menlo, monospace !important;
 }
