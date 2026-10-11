@@ -1,0 +1,9 @@
+:root,
+body,
+* {
+  font-family: "Comic Sans MS", "Comic Sans", cursive !important;
+}
+
+:root {
+  --ds-font-family: "Comic Sans MS", "Comic Sans", cursive !important;
+}
